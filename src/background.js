@@ -5,8 +5,8 @@ import { createProtocol } from "vue-cli-plugin-electron-builder/lib";
 import installExtension, { VUEJS_DEVTOOLS } from "electron-devtools-installer";
 import { menubar } from "menubar";
 import { join } from "path";
-const isDevelopment = process.env.NODE_ENV !== "production";
 import { autoUpdater } from "electron-updater";
+const isDevelopment = process.env.NODE_ENV !== "production";
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([

@@ -62,13 +62,6 @@ export default {
       d = d.getDay();
       return days[d];
     }
-  },
-  mounted() {
-    // let d = new Date(
-    //   Date.parse("2021-06-14T00:00:00.000000Z") + 1000 * 60 * 60 * 24
-    // );
-    // d = d.getDay();
-    // console.log("WW2W1", days[d]);
   }
 };
 </script>

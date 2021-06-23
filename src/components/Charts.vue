@@ -74,7 +74,6 @@ export default {
     },
     goHome() {
       let url = `http://twibar.test/user/profile`;
-      console.log(process.env.NODE_ENV);
       shell.openExternal(url);
     }
   },

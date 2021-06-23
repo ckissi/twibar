@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ckissi/twibar"
   },
   "scripts": {
     "serve": "vue-cli-service serve",

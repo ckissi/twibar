@@ -15,10 +15,11 @@ import Profile from "./components/Profile.vue";
 import { ipcRenderer, remote } from "electron";
 import Charts from "./components/Charts.vue";
 import StatusBar from "./components/StatusBar.vue";
-window.ipcRenderer = ipcRenderer;
-import functions from "./functions.js";
-const settings = require("electron-settings");
 import Configure from "./components/Configure.vue";
+import functions from "./functions.js";
+
+const settings = require("electron-settings");
+window.ipcRenderer = ipcRenderer;
 
 export default {
   name: "App",
@@ -90,7 +91,6 @@ export default {
       ipcRenderer.send("data-ready", data);
     },
     configSaved() {
-      console.log("emited");
       functions.getData(this.showData);
     }
   },
